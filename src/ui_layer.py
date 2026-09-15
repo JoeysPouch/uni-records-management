@@ -59,5 +59,5 @@ button = st.button("Collect Information",
 
 if button:
     results = f(**pars)
-    st.dataframe(results)
+    st.dataframe(results, hide_index = True)
     pars = {}
